@@ -1,41 +1,25 @@
 import "./App.css";
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { useReducer } from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import New from "./pages/New";
 import Diary from "./pages/Diary";
+import Edit from "./pages/Edit";
 import Notfound from "./pages/Notfound";
-import Button from "./components/Button"
-import Header from "./components/Header"
 
+
+function reducer(state, action) {
+  return state;
+}
 function App() {
+  const [data, dispatch] = useReducer(reducer, null);
   return (
     <>
-    <Header title={"Header"}
-      leftChild={<Button text={"left"}/>}
-      rightChild={<Button text={"right"}/>}
-    />
-    <Button 
-    text={"123"}
-    type={"DEFAULT"}
-    onClick={()=> {
-    }}
-    />
-    <Button 
-    text={"123"}
-    type={"POSITIVE"}
-    onClick={()=> {
-    }}
-    />
-    <Button 
-    text={"123"}
-    type={"NEGATIVE"}
-    onClick={()=> {
-    }}
-    />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/new" element={<New />} />
         <Route path="/diary/:id" element={<Diary />} />
+        <Route path="/edit/:id" element={<Edit />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </>
