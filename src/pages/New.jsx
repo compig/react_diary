@@ -7,7 +7,6 @@ import { DiaryDispatchContext } from '@/App'
 
 const New = () => {
   const { onCreate } = useContext(DiaryDispatchContext)
-  console.log(onCreate)
   const nav = useNavigate()
   const onSubmit = (input) => {
     onCreate(input.createdDate.getTime(), input.emotionId, input.content)
