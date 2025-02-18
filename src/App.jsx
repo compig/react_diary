@@ -1,11 +1,11 @@
-import './App.css'
+import '@/App.css'
 import { useReducer, useRef, createContext } from 'react'
 import { Routes, Route, data } from 'react-router-dom'
-import Home from './pages/Home'
-import New from './pages/New'
-import Diary from './pages/Diary'
-import Edit from './pages/Edit'
-import Notfound from './pages/Notfound'
+import Home from '@/pages/Home'
+import New from '@/pages/New'
+import Diary from '@/pages/Diary'
+import Edit from '@/pages/Edit'
+import Notfound from '@/pages/Notfound'
 
 const mockData = [
   {

@@ -1,6 +1,6 @@
-import './Editor.css'
-import EmotionItem from './EmotionItem'
-import Button from './Button'
+import '@/components/Editor.css'
+import EmotionItem from '@/components/EmotionItem'
+import Button from '@/components/Button'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 

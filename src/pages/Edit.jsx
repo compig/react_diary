@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
-import Header from '../components/Header'
-import Button from '../components/Button'
-import Editor from '../components/Editor'
+import Header from '@/components/Header'
+import Button from '@/components/Button'
+import Editor from '@/components/Editor'
 
 const Edit = () => {
   const params = useParams()
