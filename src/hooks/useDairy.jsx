@@ -14,7 +14,6 @@ const useDiary = (id) => {
       nav('/', { replace: true })
     }
     setCurDiaryItem(currentDiaryItem)
-    console.log(currentDiaryItem)
   }, [id])
   return curDiaryItem
 }
